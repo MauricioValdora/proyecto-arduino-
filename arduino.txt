@@ -1,0 +1,35 @@
+// C++ code
+//
+#define BOMBILLA 7
+#define PULSADOR 4
+#define LED 2
+
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  pinMode(BOMBILLA, OUTPUT);
+  pinMode(PULSADOR, INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int botoncito;
+  
+  botoncito=digitalRead(PULSADOR);
+  Serial.print("estado: ");
+  Serial.println(botoncito);
+  
+  if(botoncito == 0){
+    digitalWrite(BOMBILLA, HIGH);
+    digitalWrite(LED, LOW);
+   
+  }
+  else{
+    digitalWrite(LED, HIGH);
+    digitalWrite(BOMBILLA, LOW);
+  }
+  
+  delay(300);
+  
+}
