@@ -2,7 +2,7 @@
 
 Integrantes:
 
-valdora mauricio
+valdora mauricio <br>
 Tripicchio Agustin
 Ruiz Hernandez Daniel Asdrubal
 Tizzone Lautaro
